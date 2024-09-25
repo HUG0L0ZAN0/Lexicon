@@ -17,10 +17,8 @@ class RegisterActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
 
-        // Obtener la instancia de la base de datos
         val db = AppDatabase.getDatabase(this)
 
-        // Referencias a los EditText del formulario
         val editTextName = findViewById<EditText>(R.id.editTextName)
         val editTextSurname = findViewById<EditText>(R.id.editTextSurname)
         val editTextEmail = findViewById<EditText>(R.id.editTextEmail)
@@ -31,7 +29,6 @@ class RegisterActivity : AppCompatActivity() {
         val editTextState = findViewById<EditText>(R.id.editTextState)
         val editTextPostalCode = findViewById<EditText>(R.id.editTextPostalCode)
 
-        // Botón de registro
         findViewById<Button>(R.id.buttonRegister).setOnClickListener {
             // Obtener los valores introducidos por el usuario
             val name = editTextName.text.toString().trim()

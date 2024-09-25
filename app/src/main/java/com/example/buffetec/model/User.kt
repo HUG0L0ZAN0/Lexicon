@@ -15,5 +15,5 @@ data class User(
     val city: String,
     val state: String,
     val cp: Int,
-    val tipo_usuario: String = "usuario" // Se establece "usuario" por defecto
+    val tipo_usuario: String = "usuario"
 )

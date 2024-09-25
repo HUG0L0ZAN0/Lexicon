@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
 
         // Configurar el evento de clic del botón
         buttonOpenRegister.setOnClickListener {
+
             // Redirigir a RegisterActivity
             val intent = Intent(this, RegisterActivity::class.java)
             startActivity(intent)
